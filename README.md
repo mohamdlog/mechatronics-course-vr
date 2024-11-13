@@ -1,1 +1,3 @@
-# mechatronics-lesson8
+# Mechatronics Lesson 8
+
+## *In-Progress*
