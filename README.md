@@ -1,3 +1,3 @@
-# Mechatronics Lesson 8
+# Mechatronics Course VR
 
 ## *In-Progress*
