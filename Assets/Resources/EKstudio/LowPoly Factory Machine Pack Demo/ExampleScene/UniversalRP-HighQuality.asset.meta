@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
+guid: 19ba41d7c0026c3459d37c2fe90c55a0
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 272637
   packageName: Low Poly Factory Machine Pack Demo
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/EKstudio/LowPoly Factory Machine Pack Demo/ExampleScene/UniversalRP-HighQuality.asset
   uploadId: 668440

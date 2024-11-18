@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
-NativeFormatImporter:
+guid: 6d882463e1e10a8498244b58d806ffd8
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 272637
   packageName: Low Poly Factory Machine Pack Demo
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/EKstudio/LowPoly Factory Machine Pack Demo/Prefabs/Walls/WallDoorL.prefab
   uploadId: 668440

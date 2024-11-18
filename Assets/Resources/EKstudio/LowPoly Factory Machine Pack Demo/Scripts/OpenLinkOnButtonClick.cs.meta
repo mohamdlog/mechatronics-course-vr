@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
-NativeFormatImporter:
+guid: f0ed8b7710060c747aa4d3a45711438e
+MonoImporter:
   externalObjects: {}
-  mainObjectFileID: 0
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +14,5 @@ AssetOrigin:
   productId: 272637
   packageName: Low Poly Factory Machine Pack Demo
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/EKstudio/LowPoly Factory Machine Pack Demo/Scripts/OpenLinkOnButtonClick.cs
   uploadId: 668440

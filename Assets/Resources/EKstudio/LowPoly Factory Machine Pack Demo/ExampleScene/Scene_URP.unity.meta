@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
-NativeFormatImporter:
+guid: f1b0b43eee8e2f14da3d222e8b037cf0
+DefaultImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 272637
   packageName: Low Poly Factory Machine Pack Demo
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/EKstudio/LowPoly Factory Machine Pack Demo/ExampleScene/Scene_URP.unity
   uploadId: 668440

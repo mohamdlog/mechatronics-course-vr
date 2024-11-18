@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 10fc4df2da32a41aaa32d77bc913491c
-NativeFormatImporter:
+guid: 2507e3391f9d5f443b26d889334d12ec
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 272637
   packageName: Low Poly Factory Machine Pack Demo
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/EKstudio/LowPoly Factory Machine Pack Demo/Prefabs/Props/BoxWooden.prefab
   uploadId: 668440
