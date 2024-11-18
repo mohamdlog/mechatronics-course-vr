@@ -2,17 +2,31 @@ using UnityEngine;
 
 public class ConveyorScroll : MonoBehaviour
 {
-    public Material conveyorMaterial;
-    public float scrollSpeed = 2.5f;
+    public float scrollSpeed = 1.0f;
 
-    // Update is called once per frame
+    private Renderer _renderer;
+    private Material _conveyorMaterial;
+
+    void Start()
+    {
+        _renderer = GetComponent<Renderer>();
+        if (_renderer != null)
+        {
+            _conveyorMaterial = _renderer.sharedMaterial;
+        }
+        else
+        {
+            Debug.LogError("Renderer component not found on this GameObject");
+        }
+    }
+
     void Update()
     {
-        if (conveyorMaterial != null)
+        if (_conveyorMaterial != null)
         {
-            Vector2 offset = conveyorMaterial.mainTextureOffset;
-            offset.y = (offset.y + scrollSpeed * Time.deltaTime) % 1000.0f;
-            conveyorMaterial.mainTextureOffset = offset;
+            Vector2 offset = _conveyorMaterial.mainTextureOffset;
+            offset.y = (offset.y + scrollSpeed * Time.deltaTime) % 1.0f;
+            _conveyorMaterial.mainTextureOffset = offset;
         }
     }
 }
