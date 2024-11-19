@@ -591,6 +591,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8344831829262329422, guid: 6b03a4b90ae5d5942907e925787d3465, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8987541508264529160, guid: 6b03a4b90ae5d5942907e925787d3465, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -986,6 +990,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 69355919565631471, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2622205477566835885, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3224393992912066989, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
       propertyPath: m_Convex
       value: 0
@@ -996,6 +1008,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4406673348543134670, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800446408327848551, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218615964762407355, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6843615853962797083, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
@@ -1036,6 +1056,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6843615853962797083, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584949348813615759, guid: bee8f1dbc2a571748909cd52bd1a03a3, type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
