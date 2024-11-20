@@ -6,15 +6,16 @@ public class XRKeyboardMovement : MonoBehaviour
     public float speed = 5.0f;
     public float jumpHeight = 1.5f;
     public float gravity = -9.807f;
-    public Transform cameraTransform; // Reference to XR Rig's camera
-    private CharacterController characterController;
+    public float mouseSensitivity = 5.0f;
 
+    private Transform cameraTransform; // Reference to XR Rig's camera
+    private CharacterController characterController;
     private float verticalVelocity = 0f;
     private float cameraPitch = 0f;
-    public float mouseSensitivity = 5.0f;
 
     void Start()
     {
+        cameraTransform = Camera.main.transform;
         characterController = GetComponent<CharacterController>();
     }
 
