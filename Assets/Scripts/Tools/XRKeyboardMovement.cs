@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 public class XRKeyboardMovement : MonoBehaviour
@@ -13,12 +14,19 @@ public class XRKeyboardMovement : MonoBehaviour
     private float verticalVelocity = 0f;
     private float cameraPitch = 0f;
 
+    private Keyboard keyboard;
+    private Mouse mouse;
+    
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         cameraTransform = Camera.main.transform;
         characterController = GetComponent<CharacterController>();
+        keyboard = Keyboard.current;
+        mouse = Mouse.current;
     }
 
+    // Update is called once per frame
     void Update()
     {
         HandleCameraRotation();
@@ -30,10 +38,10 @@ public class XRKeyboardMovement : MonoBehaviour
         float mouseX = 0f;
         float mouseY = 0f;
 
-        if (Input.GetMouseButton(1)) // Right mouse button held
+        if (mouse.rightButton.isPressed) // Right mouse button held
         {
-            mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-            mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+            mouseX = mouse.delta.x.ReadValue() * mouseSensitivity * 0.1f;
+            mouseY = mouse.delta.y.ReadValue() * mouseSensitivity * 0.1f;
         }
 
         // Rotate camera horizontally and vertically
@@ -47,8 +55,8 @@ public class XRKeyboardMovement : MonoBehaviour
     private void HandleMovement()
     {
         // Get input for movement
-        float horizontal = Input.GetAxis("Horizontal"); // A/D or Left/Right
-        float vertical = Input.GetAxis("Vertical"); // W/S or Up/Down
+        float horizontal = (keyboard.aKey.isPressed ? -1f : 0f) + (keyboard.dKey.isPressed ? 1f : 0f);
+        float vertical = (keyboard.wKey.isPressed ? 1f : 0f) + (keyboard.sKey.isPressed ? -1f : 0f);
 
         Vector3 move = transform.right * horizontal + transform.forward * vertical;
 
@@ -59,7 +67,7 @@ public class XRKeyboardMovement : MonoBehaviour
                 verticalVelocity = -2f;
             }
 
-            if (Input.GetButtonDown("Jump"))
+            if (keyboard.spaceKey.wasPressedThisFrame)
             {
                 verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
             }
