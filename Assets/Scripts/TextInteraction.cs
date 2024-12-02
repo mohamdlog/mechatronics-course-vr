@@ -9,8 +9,11 @@ public class RobotInteraction : MonoBehaviour
     public TextMeshPro speechTextMesh;
     public string text1 = "Text 1";
     public string text2 = null;
+    public string text3 = null;
 
     private bool playerInZone = false;
+    private string[] textArray;
+    private Coroutine repeatCoroutine;
 
     // Start is called once after the MonoBehaviour is created
     void Start()
@@ -28,18 +31,24 @@ public class RobotInteraction : MonoBehaviour
             speechBubbleInstance.SetActive(true);
             if (!string.IsNullOrEmpty(text2))
             {
+                textArray = new string[] { text1, text2, text3 };
                 playerInZone = true;
-                StartCoroutine(RepeatAction());
+                repeatCoroutine = StartCoroutine(RepeatAction());
             }
         }
     }
 
     IEnumerator RepeatAction()
     {
+        int index = 1;
         while (playerInZone)
         {
-            yield return new WaitForSeconds(4);
-            speechTextMesh.text = (speechTextMesh.text == text1) ? text2 : text1;
+            if (!string.IsNullOrEmpty(textArray[index]))
+            {
+                yield return new WaitForSeconds(4);
+                speechTextMesh.text = textArray[index];
+            }
+            index = (index + 1) % textArray.Length;
         }
     }
 
@@ -48,6 +57,10 @@ public class RobotInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (repeatCoroutine != null)
+            {
+                StopCoroutine(repeatCoroutine);
+            }
             playerInZone = false;
             speechBubbleInstance.SetActive(false);
         }
