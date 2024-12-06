@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - Box
+  - ConveyorBelt
   layers:
   - Default
   - TransparentFX
