@@ -10,9 +10,6 @@ public class VacuumGripper : MonoBehaviour
             Rigidbody boxRigidbody = other.rigidbody;
             joint = gameObject.AddComponent<FixedJoint>();
             joint.connectedBody = boxRigidbody;
-            joint.breakForce = Mathf.Infinity;
-            joint.breakTorque = Mathf.Infinity;
-            Debug.Log("Box attached");
         }
     }
 
@@ -20,6 +17,5 @@ public class VacuumGripper : MonoBehaviour
     {
         if (other.gameObject.CompareTag("ConveyorBelt"))
         Destroy(joint);
-        Debug.Log("Box Detached");
     }
 }

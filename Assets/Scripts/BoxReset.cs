@@ -3,23 +3,23 @@ using System.Collections;
 
 public class BoxReset : MonoBehaviour
 {
-    private Vector3 originalPosition;
+    private Vector3 originalPosition; // Store the original position
     private Quaternion originalRotation; // Store the original rotation
-    private Transform child;
-    private MeshRenderer meshRenderer;
-    private Collision box;
-    private Renderer renderer;
+    private Transform child; // Contains the SLU logo
+    private MeshRenderer meshRenderer; // The SLU logo
+    private Collision box; // The box itself
+    private Renderer parentRenderer; // Renderer of the box
     private Material originalMaterial; // Store the original shared material
     private bool isResetting = false; // To prevent multiple coroutines
 
     void Start()
     {
         originalPosition = transform.position;
-        originalRotation = transform.rotation; // Store the original rotation
+        originalRotation = transform.rotation;
         child = transform.GetChild(0);
         meshRenderer = child.GetComponent<MeshRenderer>();
-        renderer = GetComponent<Renderer>();
-        originalMaterial = renderer.sharedMaterial; // Store the original shared material
+        parentRenderer = GetComponent<Renderer>();
+        originalMaterial = parentRenderer.sharedMaterial;
     }
 
     private void OnCollisionEnter(Collision other)
@@ -39,9 +39,9 @@ public class BoxReset : MonoBehaviour
         isResetting = true;
         yield return new WaitForSeconds(5f);
         transform.position = originalPosition;
-        transform.rotation = originalRotation; // Reset to the original rotation
+        transform.rotation = originalRotation;
         meshRenderer.enabled = false;
-        renderer.sharedMaterial = originalMaterial; // Reset to the original shared material
+        parentRenderer.sharedMaterial = originalMaterial;
         isResetting = false;
     }
 }
