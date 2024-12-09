@@ -2727,7 +2727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 110997726687246106}
   - component: {fileID: 775049546335120801}
-  - component: {fileID: 775049546335120804}
+  - component: {fileID: 775049546335120802}
   m_Layer: 0
   m_Name: FanucM410iC110
   m_TagString: Untagged
@@ -2757,27 +2757,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!65 &775049546335120804
-BoxCollider:
+--- !u!114 &775049546335120802
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775049546335120800}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a24905259b5e74983ea4c946e44a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elbowPivot: {fileID: 1130986464}
+  wristPivot: {fileID: 1279083691}
+  forearmSegmentPivot: {fileID: 243873008}
+  armSegmentPivot: {fileID: 1062725347}
 --- !u!33 &806816437039629952
 MeshFilter:
   m_ObjectHideFlags: 0
