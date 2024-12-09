@@ -2,30 +2,22 @@ using UnityEngine;
 using System.Collections;
 public class BoxTransform : MonoBehaviour
 {
-    public Material material;
-    private Renderer parentRenderer;
-    private Transform child;
-    private MeshRenderer meshRenderer;
-    private Collider box;
+    public Material material; // New material to apply
+    private Renderer _renderer; // The box's renderer
+    private Transform child; // The game object containing the SLU logo
+    private MeshRenderer meshRenderer; // Mesh renderer for child game object
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Box"))
         {
-            box = other;
-            StartCoroutine(TransformObject());
+            _renderer = other.GetComponent<Renderer>();
+            Material[] materials = _renderer.materials;
+            materials[0] = material;
+            _renderer.materials = materials;
+
+            child = other.transform.GetChild(0);
+            meshRenderer = child.GetComponent<MeshRenderer>();
+            meshRenderer.enabled = true;
         }
-    }
-
-    IEnumerator TransformObject()
-    {
-        yield return new WaitForSeconds(1f);
-        parentRenderer = box.GetComponent<Renderer>();
-        Material[] materials = parentRenderer.materials;
-        materials[0] = material;
-        parentRenderer.materials = materials;
-
-        child = box.transform.GetChild(0);
-        meshRenderer = child.GetComponent<MeshRenderer>();
-        meshRenderer.enabled = true;
     }
 }

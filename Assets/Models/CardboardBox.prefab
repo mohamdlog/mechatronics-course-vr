@@ -195,7 +195,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -240,8 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c9c7e5c3f34bb4bb476fe0549deb5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetTime: 5
-  prefab: {fileID: 6041134365691595598}
 --- !u!4 &6385465585710633460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8ba77e90426379e44b647b10ad3d009c, type: 3}
