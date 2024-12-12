@@ -16,7 +16,7 @@ public class HoverAndRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.back, rotationSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
 
         float hoverHeight = Mathf.Sin(Time.time * bobbingSpeed) * bobbingHeight;
         transform.position = new Vector3(transform.position.x, originalY + hoverHeight, transform.position.z);
