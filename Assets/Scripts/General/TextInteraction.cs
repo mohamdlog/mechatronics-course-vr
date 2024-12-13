@@ -2,18 +2,19 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 
-public class RobotInteraction : MonoBehaviour
+public class TextInteraction : MonoBehaviour
 {
     [Header("Speech Bubble Settings")]
-    public GameObject speechBubbleInstance;
-    public TextMeshPro speechTextMesh;
-    public string text1 = "Text 1";
-    public string text2 = null;
-    public string text3 = null;
+    public GameObject otherInstance = null; // An optional object besides speech bubble we want to hide/show
+    public GameObject speechBubbleInstance; // The speech bubble
+    public TextMeshPro speechTextMesh; // The text box
+    public string text1 = "Text 1"; // Default text
+    public string text2 = null; // Optional second text
+    public string text3 = null; // Optional third text
 
-    private bool playerInZone = false;
-    private string[] textArray;
-    private Coroutine repeatCoroutine;
+    private bool playerInZone = false; // To help with coroutine
+    private string[] textArray; // For looping through texts
+    private Coroutine repeatCoroutine; // To easily stop coroutine
 
     // Start is called once after the MonoBehaviour is created
     void Start()
@@ -30,8 +31,8 @@ public class RobotInteraction : MonoBehaviour
             if (string.IsNullOrEmpty(speechTextMesh.text))
             {
                 speechTextMesh.text = text1;
-
             }
+            if (otherInstance) otherInstance.SetActive(false);
             speechBubbleInstance.SetActive(true);
             if (!string.IsNullOrEmpty(text2))
             {
@@ -67,6 +68,7 @@ public class RobotInteraction : MonoBehaviour
             }
             playerInZone = false;
             speechBubbleInstance.SetActive(false);
+            if (otherInstance) otherInstance.SetActive(true);
         }
     }
 }
