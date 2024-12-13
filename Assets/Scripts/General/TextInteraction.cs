@@ -27,7 +27,11 @@ public class RobotInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            speechTextMesh.text = text1;
+            if (string.IsNullOrEmpty(speechTextMesh.text))
+            {
+                speechTextMesh.text = text1;
+
+            }
             speechBubbleInstance.SetActive(true);
             if (!string.IsNullOrEmpty(text2))
             {

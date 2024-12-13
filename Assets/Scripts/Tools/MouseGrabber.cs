@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 public class MouseGrabInteraction : MonoBehaviour
 {
     private Camera mainCamera; // Reference to the main camera for raycasting
-    private XRGrabInteractable grabInteractable; // Holds the XRGI component of the GameObject
     private bool isGrabbing; // Boolean to track whether object is being grabbed
     private Vector3 grabOffset; // Positional offset between mouse cursor's hit point and object's center
     private Mouse mouse; // Reference to the mouse input device
@@ -15,13 +14,6 @@ public class MouseGrabInteraction : MonoBehaviour
     {
         mouse = Mouse.current;
         mainCamera = Camera.main;
-        grabInteractable = GetComponent<XRGrabInteractable>();
-        
-        if (grabInteractable == null)
-        {
-            Debug.LogError($"GameObject '{gameObject.name}' must have an XRGrabInteractable component.", gameObject);
-        }
-
     }
 
     // Update is called once per frame
@@ -47,7 +39,6 @@ public class MouseGrabInteraction : MonoBehaviour
 
         if (isGrabbing)
         {
-            Debug.Log("Object is being grabbed");
             MoveObjectWithMouse();
         }
     }
