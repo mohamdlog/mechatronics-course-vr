@@ -5,7 +5,7 @@ using TMPro;
 public class TextInteraction : MonoBehaviour
 {
     [Header("Speech Bubble Settings")]
-    public GameObject otherInstance = null; // An optional object besides speech bubble we want to hide/show
+    public GameObject optionalInstance = null; // An optional object besides speech bubble we want to hide/show
     public GameObject speechBubbleInstance; // The speech bubble
     public TextMeshPro speechTextMesh; // The text box
     public string text1 = "Text 1"; // Default text
@@ -32,7 +32,7 @@ public class TextInteraction : MonoBehaviour
             {
                 speechTextMesh.text = text1;
             }
-            if (otherInstance) otherInstance.SetActive(false);
+            if (optionalInstance) optionalInstance.SetActive(false);
             speechBubbleInstance.SetActive(true);
             if (!string.IsNullOrEmpty(text2))
             {
@@ -68,7 +68,7 @@ public class TextInteraction : MonoBehaviour
             }
             playerInZone = false;
             speechBubbleInstance.SetActive(false);
-            if (otherInstance) otherInstance.SetActive(true);
+            if (optionalInstance) optionalInstance.SetActive(true);
         }
     }
 }
