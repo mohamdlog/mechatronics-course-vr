@@ -131,9 +131,11 @@ GameObject:
   - component: {fileID: 39777121}
   - component: {fileID: 39777123}
   - component: {fileID: 39777122}
+  - component: {fileID: 39777125}
+  - component: {fileID: 39777124}
   m_Layer: 0
   m_Name: Contacts
-  m_TagString: Untagged
+  m_TagString: DCMotorPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,6 +327,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &39777124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39777119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapTarget: {fileID: 579859492}
+  snapDistance: 2
+  requiredChild: {fileID: 449590546}
+  textMesh: {fileID: 657666092}
+--- !u!114 &39777125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39777119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bae7cfab6eb4845b77c9bd0cf67042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &56840757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5353266294098388586, guid: 7f7efc516120c6a449c86ff52dc60e69, type: 3}
@@ -522,15 +552,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
-      value: Magnets
+      value: 2. Magnets
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSize
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -580,6 +610,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.00000022398311
       objectReference: {fileID: 0}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 1080609039}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textInstance
+      value: 
+      objectReference: {fileID: 1884807336}
     - target: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
       value: '-Description: Permanent magnets fixed to the inner walls of the shell.
@@ -621,15 +659,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
-      value: Spacer
+      value: 4. Spacer
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSize
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -679,6 +717,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.00000022584575
       objectReference: {fileID: 0}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 1769959963}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textInstance
+      value: 
+      objectReference: {fileID: 1867198763}
     - target: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
       value: '- Description: A small component that aligns the shaft within the motor
@@ -724,11 +770,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSize
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalScale.x
@@ -899,9 +945,11 @@ GameObject:
   - component: {fileID: 285209114}
   - component: {fileID: 285209116}
   - component: {fileID: 285209115}
+  - component: {fileID: 285209118}
+  - component: {fileID: 285209117}
   m_Layer: 0
   m_Name: Magnets
-  m_TagString: Untagged
+  m_TagString: DCMotorPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1093,6 +1141,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &285209117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285209112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapTarget: {fileID: 579859492}
+  snapDistance: 2
+  requiredChild: {fileID: 936455811}
+  textMesh: {fileID: 657666092}
+--- !u!114 &285209118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285209112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bae7cfab6eb4845b77c9bd0cf67042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &299639867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1381,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310153469}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &341540717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1955993670505833518, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 1273798554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &341540722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341540717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0861404ddae69c84e8ac91be75ada431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &354839215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,6 +1614,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Workbench3
       objectReference: {fileID: 0}
+    - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_text
+      value: 3. Shaft
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_fontSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5
@@ -1561,6 +1666,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 550096426}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textInstance
+      value: 
+      objectReference: {fileID: 1831519543}
     - target: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_VerticalAlignment
       value: 512
@@ -1674,9 +1787,11 @@ GameObject:
   - component: {fileID: 438936982}
   - component: {fileID: 438936985}
   - component: {fileID: 438936984}
+  - component: {fileID: 438936987}
+  - component: {fileID: 438936986}
   m_Layer: 0
   m_Name: Shaft
-  m_TagString: Untagged
+  m_TagString: DCMotorPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1875,6 +1990,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &438936986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438936980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapTarget: {fileID: 579859492}
+  snapDistance: 2
+  requiredChild: {fileID: 285209112}
+  textMesh: {fileID: 657666092}
+--- !u!114 &438936987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438936980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bae7cfab6eb4845b77c9bd0cf67042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &441087506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1955,9 +2098,11 @@ GameObject:
   - component: {fileID: 449590548}
   - component: {fileID: 449590550}
   - component: {fileID: 449590549}
+  - component: {fileID: 449590552}
+  - component: {fileID: 449590551}
   m_Layer: 0
   m_Name: Brushes
-  m_TagString: Untagged
+  m_TagString: DCMotorPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2149,6 +2294,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &449590551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449590546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapTarget: {fileID: 579859492}
+  snapDistance: 2
+  requiredChild: {fileID: 1225923858}
+  textMesh: {fileID: 657666092}
+--- !u!114 &449590552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449590546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bae7cfab6eb4845b77c9bd0cf67042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &486679373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2391,6 +2564,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496712045}
   m_Mesh: {fileID: -7237083797644031075, guid: 850f99c09ae496b44b77b42b4cf33b0b, type: 3}
+--- !u!114 &543771759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 893392017}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &550096426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 427736354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &579859491
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,6 +2595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 579859492}
+  - component: {fileID: 579859493}
   m_Layer: 0
   m_Name: SnapTarget
   m_TagString: Untagged
@@ -2415,13 +2611,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579859491}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02163288, y: 0.021352833, z: 0.1265386}
-  m_LocalScale: {x: 0.033333335, y: 0.033333335, z: 0.033333335}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.024166219, y: 0.021352833, z: 0.18520525}
+  m_LocalScale: {x: 0.033333328, y: 0.033333335, z: 0.033333328}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1490122070}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &579859493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579859491}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 0.47, z: 0.7}
+  m_Center: {x: -0.038, y: -0.84, z: 0.88}
 --- !u!1 &635601618 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8417294046017364450, guid: 5ec805f0b11d448418a6ce984013fe18, type: 3}
@@ -2493,8 +2710,9 @@ MonoBehaviour:
     will explore key components of a DC motor, including the armature, commutator,
     brushes, and magnets.
 
-    Begin by observing the shell of the DC motor, then
-    take it to the assembly area.
+    Begin by examining the shell of the DC motor, then
+    take it to the assembly area. Afterward, return to observe and identify the remaining
+    components in order.
 
 '
   m_isRightToLeft: 0
@@ -2629,15 +2847,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
-      value: Contacts
+      value: 6. Contacts
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSize
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2683,6 +2901,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.00000022305179
       objectReference: {fileID: 0}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 1194203858}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textInstance
+      value: 
+      objectReference: {fileID: 2123335033}
     - target: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
       value: '- Description: External electrical connections that supply power to
@@ -3055,15 +3281,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
-      value: Brushes
+      value: 5. Brushes
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSize
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3109,6 +3335,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.00000022305179
       objectReference: {fileID: 0}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 543771759}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textInstance
+      value: 
+      objectReference: {fileID: 1040837963}
     - target: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
       value: '- Description: Carbon blocks that maintain electrical contact with
@@ -3148,7 +3382,7 @@ GameObject:
   - component: {fileID: 936455818}
   m_Layer: 0
   m_Name: Shell
-  m_TagString: Untagged
+  m_TagString: DCMotorPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3359,15 +3593,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936455811}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   snapTarget: {fileID: 579859492}
-  snapDistance: 1
+  snapDistance: 2
   requiredChild: {fileID: 0}
-  speechTextMesh: {fileID: 657666092}
+  textMesh: {fileID: 657666092}
+--- !u!1 &971057090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 7421165267780579753}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1002841802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3402,6 +3641,11 @@ Transform:
   - {fileID: 7596621361534546355}
   m_Father: {fileID: 2954216599946319029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1040837963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 893392017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1062725344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,6 +3733,17 @@ Transform:
   - {fileID: 8422747300290101428}
   m_Father: {fileID: 7906282973980394897}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1080609039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 183588121}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1123414639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3698,6 +3953,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1194203858 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 686255971}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1202577558
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,9 +4062,11 @@ GameObject:
   - component: {fileID: 1225923862}
   - component: {fileID: 1225923861}
   - component: {fileID: 1225923860}
+  - component: {fileID: 1225923864}
+  - component: {fileID: 1225923863}
   m_Layer: 0
   m_Name: Spacer
-  m_TagString: Untagged
+  m_TagString: DCMotorPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3989,6 +4257,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6, y: 0.47, z: 0.7}
   m_Center: {x: -0.038, y: -0.84, z: 0.88}
+--- !u!114 &1225923863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225923858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapTarget: {fileID: 579859492}
+  snapDistance: 2
+  requiredChild: {fileID: 438936980}
+  textMesh: {fileID: 657666092}
+--- !u!114 &1225923864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225923858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bae7cfab6eb4845b77c9bd0cf67042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1226825413
 GameObject:
   m_ObjectHideFlags: 0
@@ -4089,6 +4385,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4216417750447366349}
     m_Modifications:
+    - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1955993670505833518, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_Name
       value: Workbench8
@@ -4103,11 +4403,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSize
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4135,7 +4435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4156,6 +4456,10 @@ PrefabInstance:
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500587424304558027, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6500587424304558027, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_Center.z
@@ -4179,6 +4483,9 @@ PrefabInstance:
     - {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1955993670505833518, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 341540722}
     - targetCorrespondingSourceObject: {fileID: 899972842105056365, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -4713,6 +5020,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6806625194699260372, guid: 5ec805f0b11d448418a6ce984013fe18, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 1133063265}
+    - target: {fileID: 6806625194699260372, guid: 5ec805f0b11d448418a6ce984013fe18, type: 3}
+      propertyPath: textInstance
+      value: 
+      objectReference: {fileID: 1487726206}
+    - target: {fileID: 6806625194699260372, guid: 5ec805f0b11d448418a6ce984013fe18, type: 3}
       propertyPath: speechTextMesh
       value: 
       objectReference: {fileID: 1133063265}
@@ -5173,6 +5488,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715738452}
   m_Mesh: {fileID: 2471712258677788551, guid: 850f99c09ae496b44b77b42b4cf33b0b, type: 3}
+--- !u!114 &1724245492 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 7421165267780579753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1742929499
 GameObject:
   m_ObjectHideFlags: 0
@@ -5382,6 +5708,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760349689}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1769959963 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 224215516}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1783552871
 GameObject:
   m_ObjectHideFlags: 0
@@ -5560,6 +5897,11 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1831519543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 427736354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1855428871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5584,6 +5926,14 @@ PrefabInstance:
       propertyPath: text2
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6806625194699260372, guid: 5ec805f0b11d448418a6ce984013fe18, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 2053771108}
+    - target: {fileID: 6806625194699260372, guid: 5ec805f0b11d448418a6ce984013fe18, type: 3}
+      propertyPath: textInstance
+      value: 
+      objectReference: {fileID: 635601618}
     - target: {fileID: 6806625194699260372, guid: 5ec805f0b11d448418a6ce984013fe18, type: 3}
       propertyPath: speechTextMesh
       value: 
@@ -5657,6 +6007,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7336436074497116551, guid: 5ec805f0b11d448418a6ce984013fe18, type: 3}
   m_PrefabInstance: {fileID: 1855428871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1867198763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 224215516}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1878910905
 GameObject:
@@ -5831,6 +6186,11 @@ Transform:
   - {fileID: 543450652456349420}
   m_Father: {fileID: 3994402081320748775}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1884807336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 183588121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1896517992
 GameObject:
   m_ObjectHideFlags: 0
@@ -6470,6 +6830,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &2123335033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 686255971}
+  m_PrefabAsset: {fileID: 0}
 --- !u!33 &17114017059804228
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8880,7 +9245,7 @@ Transform:
   m_GameObject: {fileID: 2409770561201732561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: 9.598713, z: -11.7}
+  m_LocalPosition: {x: -8, y: 9.601, z: -11.7}
   m_LocalScale: {x: 0.7, y: 1, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10022,9 +10387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3f8e59616431f4d99fd8deb53686ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionalInstance: {fileID: 0}
-  speechBubbleInstance: {fileID: 1123414639}
-  speechTextMesh: {fileID: 1783552874}
+  optionalInstance: {fileID: 393983120}
+  textInstance: {fileID: 1123414639}
+  textMesh: {fileID: 1783552874}
   text1: 
   text2: 
   text3: 
@@ -10516,9 +10881,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4065686402572439690, guid: 7f7efc516120c6a449c86ff52dc60e69, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6557859103922764098}
-    - targetCorrespondingSourceObject: {fileID: 4065686402572439690, guid: 7f7efc516120c6a449c86ff52dc60e69, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6557859103922764097}
     - targetCorrespondingSourceObject: {fileID: 5229086698003434795, guid: 7f7efc516120c6a449c86ff52dc60e69, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -10533,18 +10895,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4065686402572439690, guid: 7f7efc516120c6a449c86ff52dc60e69, type: 3}
   m_PrefabInstance: {fileID: 6557859103922764094}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6557859103922764097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6557859103922764096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c170595b35fb932478bd04965ea529ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &6557859103922764098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11232,7 +11582,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
-      value: DC Motor Shell
+      value: 1. DC Motor Shell
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_fontSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003354742006166921, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11274,6 +11632,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textMesh
+      value: 
+      objectReference: {fileID: 1724245492}
+    - target: {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: textInstance
+      value: 
+      objectReference: {fileID: 971057090}
     - target: {fileID: 8031735220581918793, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_text
       value: '- Description: The outer casing of the motor, designed to hold all

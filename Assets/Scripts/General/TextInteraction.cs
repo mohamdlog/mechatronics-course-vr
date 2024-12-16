@@ -6,8 +6,8 @@ public class TextInteraction : MonoBehaviour
 {
     [Header("Speech Bubble Settings")]
     public GameObject optionalInstance = null; // An optional object besides speech bubble we want to hide/show
-    public GameObject speechBubbleInstance; // The speech bubble
-    public TextMeshPro speechTextMesh; // The text box
+    public GameObject textInstance; // The speech bubble
+    public TextMeshPro textMesh; // The text box
     public string text1 = "Text 1"; // Default text
     public string text2 = null; // Optional second text
     public string text3 = null; // Optional third text
@@ -20,7 +20,7 @@ public class TextInteraction : MonoBehaviour
     void Start()
     {
 
-        speechBubbleInstance.SetActive(false);
+        textInstance.SetActive(false);
     }
 
     // Called when player is in trigger zone
@@ -28,12 +28,12 @@ public class TextInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (string.IsNullOrEmpty(speechTextMesh.text))
+            if (string.IsNullOrEmpty(textMesh.text))
             {
-                speechTextMesh.text = text1;
+                textMesh.text = text1;
             }
             if (optionalInstance) optionalInstance.SetActive(false);
-            speechBubbleInstance.SetActive(true);
+            textInstance.SetActive(true);
             if (!string.IsNullOrEmpty(text2))
             {
                 textArray = new string[] { text1, text2, text3 };
@@ -51,7 +51,7 @@ public class TextInteraction : MonoBehaviour
             if (!string.IsNullOrEmpty(textArray[index]))
             {
                 yield return new WaitForSeconds(4);
-                speechTextMesh.text = textArray[index];
+                textMesh.text = textArray[index];
             }
             index = (index + 1) % textArray.Length;
         }
@@ -67,7 +67,7 @@ public class TextInteraction : MonoBehaviour
                 StopCoroutine(repeatCoroutine);
             }
             playerInZone = false;
-            speechBubbleInstance.SetActive(false);
+            textInstance.SetActive(false);
             if (optionalInstance) optionalInstance.SetActive(true);
         }
     }

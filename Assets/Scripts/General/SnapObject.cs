@@ -4,14 +4,22 @@ using TMPro;
 public class SnapObject : MonoBehaviour
 {
     public Transform snapTarget; // The target's position we want to snap to
-    public float snapDistance = 0.2f; // The distance tolerated
+    public float snapDistance = 2f; // The distance tolerated
     public GameObject requiredChild; // Optional required object before snapping
-    public TextMeshPro speechTextMesh; // Optional text box
+    public TextMeshPro textMesh; // Optional text box
 
     private bool isSnapped = false; // To track if item has been snapped
+    private Vector3 position; // To track original position
+    private Quaternion rotation; // To track original rotation
 
-    // Update is called once per frame
-    void Update()
+    // Start is called once after the MonoBehaviour is created
+    void Start()
+    {
+        position = transform.position;
+        rotation = transform.rotation;
+    }
+
+    public void Snap()
     {
         if (!isSnapped && CanSnap())
         {
@@ -19,13 +27,15 @@ public class SnapObject : MonoBehaviour
             if (distance < snapDistance)
             {
                 transform.position = snapTarget.position;
+                transform.rotation = snapTarget.rotation;
+
                 transform.parent = snapTarget;
                 isSnapped = true;
-                Debug.Log($"{gameObject.name} snapped into place!");
+                textMesh.text = ($"{gameObject.name} snapped into place!");
             }
         }
-    }
-
+    }   
+  
     private bool CanSnap()
     {
         if (requiredChild == null)
@@ -40,7 +50,16 @@ public class SnapObject : MonoBehaviour
                 return true;
             }
         }
-        speechTextMesh.text = ($"Retrieve {requiredChild.name} before assembling {transform.name}");
+
+        textMesh.text = ($"Retrieve {requiredChild.name} before assembling {transform.name}.");
+        ResetObject();
         return false;
+    }
+
+    private void ResetObject()
+    {
+        Debug.Log("test");
+        transform.position = position;
+        transform.rotation = rotation;
     }
 }
