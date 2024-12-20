@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the source code
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      # Step 2: Install Semgrep
+      - name: Install Semgrep
+        run: |
+          pip3 install semgrep
+
+      # Step 3: Create Semgrep Configuration
+      - name: Create Semgrep Configuration
+        run: |
+          cat <<-'EOF' > semgrep-config.yaml
+            include:
+              # Include default general C# rules from Semgrep's public registry
+              - p/csharp
+
+            rules:
+              # Unity-Specific Rule 1: Avoid using GameObject.Find methods
+              - id: unity-gameobject-find
+                patterns:
+                  - pattern: GameObject.Find($ARGS)
+                  - pattern: GameObject.FindObjectOfType($ARGS)
+                  - pattern: GameObject.FindObjectsOfType($ARGS)
+                message: "Avoid using GameObject.Find* methods at runtime. Cache references or use dependency injection for better performance."
+                severity: WARNING
+                languages: [csharp]
+
+              # Unity-Specific Rule 2: Avoid calling GetComponent in Update
+              - id: unity-getcomponent-in-update
+                patterns:
+                  - pattern: |
+                      void Update() {
+                        $X.GetComponent<$T>();
+                      }
+                message: "Avoid calling GetComponent repeatedly in Update. Cache references outside of Update to improve performance."
+                severity: WARNING
+                languages: [csharp]
+
+              # Unity-Specific Rule 3: Ensure Time.deltaTime is used for frame-rate independent movement
+              - id: unity-update-no-delta-time
+                patterns:
+                  - pattern: |
+                      void Update() {
+                        $X.transform.Translate($X1, $X2, $X3);
+                      }
+                  - pattern-not: Time.deltaTime
+                message: "Consider using Time.deltaTime for frame-rate independent movement (e.g., transform.Translate(x * Time.deltaTime, ...))."
+                severity: INFO
+                languages: [csharp]
+
+              # Unity-Specific Rule 4: Avoid synchronous resource loading
+              - id: unity-sync-resource-load
+                patterns:
+                  - pattern: Resources.Load($ARGS)
+                message: "Using Resources.Load at runtime can cause frame hitches. Consider pre-loading or using async loading strategies."
+                severity: WARNING
+                languages: [csharp]
+
+              # Unity-Specific Rule 5: Avoid LINQ operations in Update
+              - id: unity-linq-in-update
+                patterns:
+                  - pattern: |
+                      void Update() {
+                        var result = $X.Where($ARGS);
+                      }
+                message: "Avoid using Linq in Update methods to reduce garbage allocations. Pre-compute or use non-alloc patterns."
+                severity: INFO
+                languages: [csharp]
+          EOF
+
+      # Step 4: Run Semgrep Analysis
+      - name: Run Semgrep Analysis
+        run: |
+          semgrep --config semgrep-config.yaml --metrics=off

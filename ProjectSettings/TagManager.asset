@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Anchor
   - Box
   - ConveyorBelt
+  - DCMotorPart
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,12 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
+# Unity license and activation files
+*.ulf
+*.alf
+
+# Unity-specific files
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
