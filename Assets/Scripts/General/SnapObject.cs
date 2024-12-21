@@ -9,14 +9,16 @@ public class SnapObject : MonoBehaviour
     public TextMeshPro textMesh; // Optional text box
 
     private bool isSnapped = false; // To track if item has been snapped
-    private Vector3 position; // To track original position
-    private Quaternion rotation; // To track original rotation
+    private Transform originalParent; // To track original parent
+    private Vector3 originalPosition; // To track original position
+    private Quaternion originalRotation; // To track original rotation
 
     // Start is called once after the MonoBehaviour is created
     void Start()
     {
-        position = transform.position;
-        rotation = transform.rotation;
+        originalParent = transform.parent;
+        originalPosition = transform.position;
+        originalRotation = transform.rotation;
     }
 
     public void Snap()
@@ -58,7 +60,8 @@ public class SnapObject : MonoBehaviour
 
     private void ResetObject()
     {
-        transform.position = position;
-        transform.rotation = rotation;
+        transform.parent = originalParent;
+        transform.position = originalPosition;
+        transform.rotation = originalRotation;
     }
 }

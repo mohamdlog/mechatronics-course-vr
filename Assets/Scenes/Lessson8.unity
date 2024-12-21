@@ -795,7 +795,7 @@ PrefabInstance:
     - target: {fileID: 371683746489148911, guid: 73c3df5c9845e5442b87951d83fc63ff, type: 3}
       propertyPath: m_text
       value: Welcome to Class 2! See how DC motors are used in real-world mechatronic
-        systems like robotics, automation, and other technologies.
+        systems.
       objectReference: {fileID: 0}
     - target: {fileID: 371683746489148911, guid: 73c3df5c9845e5442b87951d83fc63ff, type: 3}
       propertyPath: m_fontSize
@@ -11012,8 +11012,7 @@ PrefabInstance:
         enabling precision in applications like robotics, automation, and transportation.
 
         This
-        session explores how they are integrated into real-world systems across various
-        industries.'
+        session explores how they are integrated into real-world systems.'
       objectReference: {fileID: 0}
     - target: {fileID: 8560504793967352433, guid: de1b22340d99db64b95e94ed8d7b0b43, type: 3}
       propertyPath: m_Name
