@@ -4252,18 +4252,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 749481369}
     m_Modifications:
-    - target: {fileID: 4128806183964166460, guid: 7e158a56d4e4d4849a49c90cc8379a7a, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7556465058900396440, guid: 7e158a56d4e4d4849a49c90cc8379a7a, type: 3}
-      propertyPath: doorAnimator
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7556465058900396440, guid: 7e158a56d4e4d4849a49c90cc8379a7a, type: 3}
-      propertyPath: toggleTriggerName
-      value: DoorToggle
-      objectReference: {fileID: 0}
     - target: {fileID: 3782549888810040735, guid: 4a2ce8910eae24d4093bfddca671d3eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.7547593
@@ -4307,6 +4295,18 @@ PrefabInstance:
     - target: {fileID: 9021180348585304957, guid: 4a2ce8910eae24d4093bfddca671d3eb, type: 3}
       propertyPath: m_Name
       value: DoorTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4128806183964166460, guid: 7e158a56d4e4d4849a49c90cc8379a7a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556465058900396440, guid: 7e158a56d4e4d4849a49c90cc8379a7a, type: 3}
+      propertyPath: doorAnimator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7556465058900396440, guid: 7e158a56d4e4d4849a49c90cc8379a7a, type: 3}
+      propertyPath: toggleTriggerName
+      value: DoorToggle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5339,8 +5339,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 4216417750447366349}
     m_Modifications:
     - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_Size.z
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_Center.x
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_Center.y
+      value: 0.003
       objectReference: {fileID: 0}
     - target: {fileID: 1955993670505833518, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_Name

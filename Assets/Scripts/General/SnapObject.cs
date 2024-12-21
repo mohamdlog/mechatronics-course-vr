@@ -26,10 +26,10 @@ public class SnapObject : MonoBehaviour
             float distance = Vector3.Distance(transform.position, snapTarget.position);
             if (distance < snapDistance)
             {
-                transform.position = snapTarget.position;
-                transform.rotation = snapTarget.rotation;
-
                 transform.parent = snapTarget;
+                transform.position = snapTarget.position;
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+
                 isSnapped = true;
                 textMesh.text = ($"{gameObject.name} snapped into place!");
             }
@@ -58,7 +58,6 @@ public class SnapObject : MonoBehaviour
 
     private void ResetObject()
     {
-        Debug.Log("test");
         transform.position = position;
         transform.rotation = rotation;
     }
