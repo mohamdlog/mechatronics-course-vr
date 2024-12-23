@@ -298,7 +298,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!54 &39777123
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39777119}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
   m_Name: 
@@ -1493,7 +1493,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!54 &285209116
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1528,7 +1528,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285209112}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
   m_Name: 
@@ -1628,13 +1628,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299639867}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
   m_LocalPosition: {x: -7.28, y: 20.36, z: -5.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 80, y: 0, z: 0}
 --- !u!114 &299639870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,18 +1749,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310153469}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &341540722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955993669316459444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0861404ddae69c84e8ac91be75ada431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &354839215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,7 +2388,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!54 &438936985
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2435,7 +2423,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438936980}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
   m_Name: 
@@ -2703,7 +2691,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!54 &449590550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2738,7 +2726,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449590546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
   m_Name: 
@@ -4094,7 +4082,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936455811}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
   m_Name: 
@@ -4425,13 +4413,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113050868}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.115, z: 0}
   m_LocalScale: {x: 0.005, y: 0.005, z: 0.0050000004}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1795087878}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!64 &1113050870
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5070,7 +5058,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
 --- !u!54 &1225923861
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5126,7 +5114,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225923858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d465f0f2b551ed4e8b3f752d9094d73, type: 3}
   m_Name: 
@@ -5273,8 +5261,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 4216417750447366349}
     m_Modifications:
     - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_Size.y
-      value: 0.015
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       propertyPath: m_Size.z
@@ -5398,7 +5390,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6527910507900091888, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
-    - {fileID: 1325307042722086285, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
     m_AddedGameObjects:
@@ -5408,7 +5399,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1955993670505833518, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 341540722}
+      addedObject: {fileID: 5020332506134686003}
     - targetCorrespondingSourceObject: {fileID: 899972842105056365, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -7393,6 +7384,16 @@ MonoBehaviour:
   spacer: {fileID: 1225923859}
   brushes: {fileID: 449590547}
   contacts: {fileID: 39777120}
+  originalParent: {fileID: 1490122070}
+  textMesh: {fileID: 657666092}
+  text1: Welcome to today's lesson on DC Motor Components! In this activity, we will
+    explore key components of a DC motor, including the armature, commutator, brushes,
+    and magnets.
+  text2: Welcome to today's lesson on DC Motor Components! In this activity, we will
+    explore key components of a DC motor, including the armature, commutator, brushes,
+    and magnets. Begin by examining the shell of the DC motor, then take it to the
+    assembly area.
+  text3: Afterward, return to observe and identify the remaining components in order.
 --- !u!1 &1831519543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8485937703731964353, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
@@ -7835,6 +7836,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915165410}
   m_Mesh: {fileID: -1175741318789153100, guid: 850f99c09ae496b44b77b42b4cf33b0b, type: 3}
+--- !u!1 &1926395443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1955993670505833518, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
+  m_PrefabInstance: {fileID: 1273798554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1949035295
 GameObject:
   m_ObjectHideFlags: 0
@@ -14278,11 +14284,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &1955993669316459444 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1955993670505833518, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
-  m_PrefabInstance: {fileID: 1273798554}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1956228827990537073
 Transform:
   m_ObjectHideFlags: 0
@@ -23150,6 +23151,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5020332505177110197, guid: a0c70cb1d3336984caebd5b56f1b295b, type: 3}
   m_PrefabInstance: {fileID: 1273798554}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5020332506134686003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926395443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be19baf9fd4e0af4ea42c5d2cb557f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &5036002889769772216
 MeshRenderer:
   m_ObjectHideFlags: 0
