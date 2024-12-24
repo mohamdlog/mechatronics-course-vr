@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ResetState : MonoBehaviour
@@ -9,6 +10,13 @@ public class ResetState : MonoBehaviour
     public Transform spacer;
     public Transform brushes;
     public Transform contacts;
+    public Transform originalParent;
+
+    public TextMeshPro textMesh; // Board's text box
+    public string text1 = null; // Optional first text
+    public string text2 = null; // Optional second text
+    public string text3 = null; // Optional third text
+
 
     // Dictionary to store initial positions and rotations
     private Dictionary<Transform, (Vector3 position, Quaternion rotation)> initialStates;
@@ -37,6 +45,9 @@ public class ResetState : MonoBehaviour
         {
             kvp.Key.position = kvp.Value.position;
             kvp.Key.rotation = kvp.Value.rotation;
+            kvp.Key.SetParent(originalParent);
         }
+
+        textMesh.text = $"{text1}\n{text2} {text3}";
     }
 }
