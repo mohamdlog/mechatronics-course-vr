@@ -45,9 +45,9 @@ public class ResetState : MonoBehaviour
         {
             kvp.Key.position = kvp.Value.position;
             kvp.Key.rotation = kvp.Value.rotation;
-            kvp.Key.parent = originalParent;
+            kvp.Key.SetParent(originalParent);
         }
 
-        textMesh.text = $"{text1}\n{text2}{text3}";
+        textMesh.text = $"{text1}\n{text2} {text3}";
     }
 }

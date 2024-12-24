@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snapTarget: {fileID: 579859492}
-  snapDistance: 2
+  snapCollider: {fileID: 579859493}
   requiredChild: {fileID: 449590546}
   textMesh: {fileID: 657666092}
 --- !u!1 &52533416
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snapTarget: {fileID: 579859492}
-  snapDistance: 2
+  snapCollider: {fileID: 579859493}
   requiredChild: {fileID: 936455811}
   textMesh: {fileID: 657666092}
 --- !u!1 &299639867
@@ -2429,7 +2429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snapTarget: {fileID: 579859492}
-  snapDistance: 2
+  snapCollider: {fileID: 579859493}
   requiredChild: {fileID: 285209112}
   textMesh: {fileID: 657666092}
 --- !u!1001 &441087506
@@ -2454,15 +2454,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.44
+      value: -7.4
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.77
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.44
+      value: -10.5
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2732,7 +2732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snapTarget: {fileID: 579859492}
-  snapDistance: 2
+  snapCollider: {fileID: 579859493}
   requiredChild: {fileID: 1225923858}
   textMesh: {fileID: 657666092}
 --- !u!1001 &486679373
@@ -4088,7 +4088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snapTarget: {fileID: 579859492}
-  snapDistance: 2
+  snapCollider: {fileID: 579859493}
   requiredChild: {fileID: 0}
   textMesh: {fileID: 657666092}
 --- !u!1 &971057090 stripped
@@ -5120,7 +5120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snapTarget: {fileID: 579859492}
-  snapDistance: 2
+  snapCollider: {fileID: 579859493}
   requiredChild: {fileID: 438936980}
   textMesh: {fileID: 657666092}
 --- !u!1 &1226825413
@@ -7389,10 +7389,8 @@ MonoBehaviour:
   text1: Welcome to today's lesson on DC Motor Components! In this activity, we will
     explore key components of a DC motor, including the armature, commutator, brushes,
     and magnets.
-  text2: Welcome to today's lesson on DC Motor Components! In this activity, we will
-    explore key components of a DC motor, including the armature, commutator, brushes,
-    and magnets. Begin by examining the shell of the DC motor, then take it to the
-    assembly area.
+  text2: Begin by examining the shell of the DC motor, then take it to the assembly
+    area.
   text3: Afterward, return to observe and identify the remaining components in order.
 --- !u!1 &1831519543 stripped
 GameObject:
